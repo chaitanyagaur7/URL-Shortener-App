@@ -26,14 +26,14 @@ This is a simple URL shortener web application built using Flask and SQLite. The
 2. Create a virtual environment (optional but recommended):
 
   ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 3. Install the required dependencies:
 
   ```bash
-pip install -r requirements.txt
-```
+   pip install -r requirements.txt
+  ```
 
 4. Set up the database: 
 ```bash
@@ -45,7 +45,7 @@ python app.py
 Run the Flask development server:
 
 ```bash
-python app.py
+   python app.py
 ```
 
 Open your browser and go to http://127.0.0.1:5000/.
@@ -55,6 +55,7 @@ Enter a long URL in the input field and get a shortened version.
 Use the generated short URL to be redirected to the original long URL.
 
 ## File Structure 
+
 ``` graphql
 .
 ├── app.py                # Main application file
@@ -68,15 +69,21 @@ Use the generated short URL to be redirected to the original long URL.
 
 ## Files
 
-app.py: Contains the Flask application logic, including routes for shortening URLs and redirecting from short URLs to long URLs.
-models.py: Defines the database model URLMapping, which stores long and short URLs.
-index.html: The homepage where users can input long URLs and receive short URLs.
+- app.py: Contains the Flask application logic, including routes for shortening URLs and redirecting from short URLs to long URLs.
+
+- models.py: Defines the database model URLMapping, which stores long and short URLs.
+
+- index.html: The homepage where users can input long URLs and receive short URLs.
 
 ## Database Schema
-URLMapping:
 
-id: Integer, primary key.
-long_url: String (512), the original long URL.
-short_url: String (6), the generated short URL.
+URLMapping:
+ - id: Integer, primary key.
+   
+ - long_url: String (512), the original long URL.
+   
+ - short_url: String (6), the generated short URL.
+
+
 
 
