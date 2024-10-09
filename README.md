@@ -19,10 +19,10 @@ This is a simple URL shortener web application built using Flask and SQLite. The
 
 1. Clone this repository:
 
-   ```bash
-   git clone https://github.com/chaitanyagaur7/URL-Shortener-App.git
-   cd URL-Shortener-App
-   ```
+```bash
+git clone https://github.com/chaitanyagaur7/URL-Shortener-App.git
+cd URL-Shortener-App
+```
 2. Create a virtual environment (optional but recommended):
 
   ```bash
